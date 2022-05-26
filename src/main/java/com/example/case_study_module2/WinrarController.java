@@ -485,6 +485,7 @@ class doWorkZipFolderZip4j extends Task<Void> {
             Thread.sleep(500);
             System.out.println("file name: " + file.getName() + " file path: " + file.getAbsolutePath());
         }
+        updateProgress(0,0);
         zipFile.createZipFileFromFolder(inputDir, parameters, false, 0);
         return null;
     }
