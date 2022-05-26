@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.case_study_module2.WinrarController">
+    <children>
+        <AnchorPane layoutX="9.0" layoutY="9.0" prefHeight="481.0" prefWidth="733.0" style="-fx-border-color: LightGray;">
+            <children>
+                <Label layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="421.0" text="WinRar - Java GUI Version">
+                    <font>
+                        <Font name=".Vn3DH Normal" size="20.0" />
+                    </font>
+                </Label>
+                <AnchorPane layoutX="14.0" layoutY="67.0" prefHeight="403.0" prefWidth="257.0" style="-fx-border-color: LightGray;">
+                    <children>
+                        <Text layoutX="6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Compress your files! Setup your profile." wrappingWidth="219.0" />
+                        <Label layoutX="6.0" layoutY="47.0" prefHeight="17.0" prefWidth="89.0" text="Type password : " />
+                        <PasswordField fx:id="showPass" layoutX="95.0" layoutY="43.0" prefHeight="25.0" prefWidth="155.0" style="-fx-background-color: white; -fx-border-color: LightGray;" />
+                        <Label layoutX="6.0" layoutY="89.0" prefHeight="17.0" prefWidth="141.0" text="Files to compressed : " />
+                        <TextField fx:id="showInfo" disable="true" layoutX="7.0" layoutY="116.0" prefHeight="25.0" prefWidth="243.0" style="-fx-background-color: white; -fx-border-color: LightGray;" />
+                        <Button layoutX="7.0" layoutY="153.0" mnemonicParsing="false" onAction="#openFolder" prefHeight="25.0" prefWidth="243.0" style="-fx-border-color: LightGray; -fx-background-color: LightGray;" text="Open Folder" />
+                        <Button layoutX="7.0" layoutY="191.0" mnemonicParsing="false" onAction="#openFile" prefHeight="25.0" prefWidth="243.0" style="-fx-border-color: LightGray; -fx-background-color: LightGray;" text="Open File" />
+                        <Label layoutX="7.0" layoutY="239.0" prefHeight="17.0" prefWidth="243.0" text="Save output name and location :" />
+                        <Button layoutX="6.0" layoutY="266.0" mnemonicParsing="false" onAction="#saveOutputLocation" prefHeight="27.0" prefWidth="69.0" style="-fx-border-color: LightGray; -fx-background-color: LightGray;" text="Save as" />
+                        <TextField fx:id="outputLocation" disable="true" layoutX="85.0" layoutY="266.0" prefHeight="27.0" prefWidth="165.0" style="-fx-background-color: white; -fx-border-color: LightGray;" />
+                        <Button layoutX="7.0" layoutY="312.0" mnemonicParsing="false" onAction="#compressAll" prefHeight="25.0" prefWidth="243.0" style="-fx-border-color: LightGray; -fx-background-color: LightGray;" text="Compress" />
+                        <Button layoutX="7.0" layoutY="354.0" mnemonicParsing="false" onAction="#unZipFile" prefHeight="25.0" prefWidth="243.0" style="-fx-border-color: LightGray; -fx-background-color: LightGray;" text="UnCompress" />
+                    </children></AnchorPane>
+                <AnchorPane layoutX="289.0" layoutY="67.0" prefHeight="395.0" prefWidth="430.0" style="-fx-border-color: LightGray;">
+                    <children>
+                        <Label layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="189.0" text="All logs should display here : " />
+                        <ProgressBar fx:id="progressBar" layoutX="9.0" layoutY="363.0" prefHeight="18.0" prefWidth="368.0" progress="0.0" />
+                        <TextArea fx:id="showArea" cacheShape="false" centerShape="false" editable="false" focusTraversable="false" layoutX="10.0" layoutY="41.0" prefHeight="313.0" prefWidth="410.0" scaleShape="false" style="-fx-background-color: white; -fx-border-color: LightGray;">
+                            <cursor>
+                                <Cursor fx:constant="NONE" />
+                            </cursor>
+                        </TextArea>
+                        <ProgressIndicator fx:id="proIndi" layoutX="387.0" layoutY="361.0" progress="0.0" />
+                        <Label fx:id="labelWrong" layoutX="201.0" layoutY="14.0" prefHeight="17.0" prefWidth="165.0" textFill="#fc1b1b" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
