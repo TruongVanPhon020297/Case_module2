@@ -15,7 +15,7 @@
     <children>
         <AnchorPane layoutX="9.0" layoutY="9.0" prefHeight="481.0" prefWidth="733.0" style="-fx-border-color: LightGray;">
             <children>
-                <Label layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="421.0" text="WinRar - Java GUI Version">
+                <Label layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="421.0" text="WinZip - Java GUI Version">
                     <font>
                         <Font name=".Vn3DH Normal" size="20.0" />
                     </font>

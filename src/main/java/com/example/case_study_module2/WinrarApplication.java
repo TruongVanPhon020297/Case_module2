@@ -16,7 +16,7 @@ public class WinrarApplication extends Application {
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root, 750, 500);
         stage.getIcons().add(new Image("https://media-exp1.licdn.com/dms/image/C510BAQEdjKl11NB6-g/company-logo_200_200/0/1519959194921?e=2147483647&v=beta&t=aw701egxIiTMH5Bvt-yh_lpGyHkBPo5yrORm7DeQ840"));
-        stage.setTitle("Java GUI WinRar");
+        stage.setTitle("Java GUI WinZip");
         stage.setScene(scene);
         stage.show();
     }
